@@ -1,0 +1,40 @@
+header {
+   background-color: #ae3836;
+   padding: 17px;
+}
+
+.aheader {
+   color: white;
+   text-decoration: none;
+   background-color: #875c5a;
+   padding: 8px;
+   border: 1px solid white;
+   border-radius: 7px;
+font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aheader:hover {
+   color: rgb(250, 74, 74);
+   box-shadow: 4px -4px 1px;
+}
+
+.aheader:active {
+   color: rgb(70, 58, 58);
+}
+
+ul {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   gap: 15px;
+   margin: 0;
+   padding: 0;
+}
+
+ul li {}
+
+body {
+   margin: 0;
+}

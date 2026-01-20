@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="page-detail-1.html">La gariguette</a>
+                </li>
+                <li>
+                    <a href="page-detail-2.html">La mariguette</a>
+                </li>
+                <li>
+                    <a href="page-detail-3.html">La cléry</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <fieldset>
+            <form>
+
+                <h1>Contactez-Nous</h1>
+
+                <p>Utilisez ce formulaire pour commander vos barquettes de fraises préférées ou simplement pour nous
+                    envoyer
+                    un
+                    message &#x1F353
+                </p>
+
+                <p>
+                    <label for="name-id">Nom *</label>
+                    <input type="text" name="name-id" id="name-id" placeholder="Ecrivez votre nom...">
+                </p>
+                <p>
+                    <label for="surname-id">Prénom *</label>
+                    <input type="text" name="surname-id" id="surname-id" placeholder="Ecrivez votre prénom...">
+                </p>
+                <p>
+                    <label for="adresse-id">Adresse*</label>
+                    <input type="text" name="adresse-id" id="adresse-id" placeholder="Ecrivez votre mail...">
+                </p>
+                <p>
+                    <label for="city-id">Lieu*</label>
+                    <input type="text" name="city-id" id="city-id" placeholder="Entrez votre lieu...">
+                </p>
+                <p>
+                    <label for="npa-id">N postale (NPA)</label>
+                    <input type="text" name="npa-id" id="npa-id" placeholder="Entrez votre NPA...">
+                </p>
+
+                <fieldset>
+                    <legend>Votre commande</legend>
+                    <p>Barquette de fraise désirée : </p>
+
+                    <input type="checkbox" name="gariguette" id="gariguette-id">
+                    <label for="gariguette-id">
+                        La gariguette
+                    </label>
+
+                    <input type="checkbox" name="mariguette" id="mariguette-id">
+                    <label for="mariguette-id">
+                        La mariquette
+                    </label>
+
+                    <input type="checkbox" name="clery" id="clery-id">
+                    <label for="clery-id">
+                        La cléry
+                    </label>
+
+                    <p>
+                        <label for="quantite-id">Quantité *</label>
+                        <select name="--Choisissez--">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </p>
+
+                    <fieldset>
+                        <legend>Mode de paiement</legend>
+                        <input type="radio" name="payment" id="paiementalalivraison-id"><label
+                            for="paiementalalivraison-id">Payement à la livraison</label>
+                        <input type="radio" name="payment" id="carte-id"><label for="carte-id">Carte bancaire</label>
+                        <input type="radio" name="payment" id="paypal-id"><label for="paypal-id">PayPal</label>
+                    </fieldset>
+                </fieldset>
+                <label for="message-id"><br>Message</label>
+                <textarea name="message" id="message-id"></textarea>
+
+                <p>
+                    <input type="checkbox" name="accept" id="accept-id">
+                    <label for="accept-id">J'accepte les conditions générales *</label>
+                </p>
+
+                <input type="submit" name="buttonfinish" id="envoyer-id">
+            </form>
+        </fieldset>
+    </main>
+
+    <footer>
+        <p>
+            © 2021 - Tous droits réservés
+        </p>
+        <nav>
+            <ul>
+                <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.etml.ch/">ETML</a></li>
+                <li><a href="mailto:pr55xpt@eduvaud.ch">pr55xpt@eduvaud.ch</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
