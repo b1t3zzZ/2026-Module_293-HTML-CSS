@@ -1,28 +1,56 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
 header {
    background-color: #ae3836;
-   padding: 17px;
+   padding: 27px;
 }
 
 .aheader {
    color: white;
    text-decoration: none;
    background-color: #875c5a;
-   padding: 8px;
+   padding: 10px;
    border: 1px solid white;
    border-radius: 7px;
-font-family: "Cedarville Cursive", cursive;
-  font-weight: 400;
-  font-style: normal;
+   font-family: "Edu NSW ACT Cursive", cursive;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+   font-size: 1em;
 }
 
 .aheader:hover {
    color: rgb(250, 74, 74);
-   box-shadow: 4px -4px 1px;
+
 }
 
 .aheader:active {
-   color: rgb(70, 58, 58);
+   background-color: white;
+   color: rgb(133, 1, 1);
+   box-shadow: 4px -4px 1px;
 }
+
+.debut {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-image: url("../images/fraise.png");
+   background-size: cover;
+   background-position: center;
+   height: 320px;
+   justify-content: center;
+   text-align: center;
+   color: white;
+   text-shadow: 2px 3px 4px rgb(34, 34, 34);
+   font-family: "Edu NSW ACT Cursive", cursive;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+}
+
 
 ul {
    display: flex;
