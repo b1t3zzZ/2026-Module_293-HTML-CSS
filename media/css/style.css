@@ -8,7 +8,8 @@ header {
    padding: 1.5%;
 }
 
-ul {
+ul,
+ol {
    display: flex;
    justify-content: center;
    list-style: none;
@@ -87,7 +88,7 @@ p {
    background-color: #ae3836;
    margin: 25px;
    border-radius: 10px;
-   
+
 }
 
 .listVarieteFraise {
@@ -103,7 +104,7 @@ p {
    font-style: italic;
    text-shadow: 2px 3px 4px rgb(34, 34, 34);
    padding: 12px;
-   
+
 }
 
 .textVarietesDeFraise {
@@ -111,9 +112,57 @@ p {
    background-color: #6a3b3a;
    text-decoration: none;
    color: rgb(230, 226, 226);
-   padding: 20px;
+   padding: 15px;
    border-radius: 5px;
    font-size: 20px;
 }
 
 /*                   Fin de la partie                              */
+
+/*                   Section "Les taille des fraises"              */
+.debut3 {
+   margin: 25px;
+   border: 2px solid #b95752;
+   border-radius: 10px;
+}
+
+.titreTailleFraise {
+   display: flex;
+   justify-content: center;
+   font-family: "Edu NSW ACT Cursive", cursive;
+   font-style: italic;
+   text-shadow: 2px 3px 4px rgb(34, 34, 34);
+   padding: 17px;
+   font-size: 25px;
+}
+
+.textTailleFraise {
+   display: block;
+}
+
+.list_taille_fraise {
+   display: flex;
+   justify-content: center;
+   gap: 130px;
+   padding: 20px;
+}
+
+
+.list_taille_fraise>div {
+   border: 10px solid #d6c8c7;
+   border-radius: 5px;
+}
+
+.list_taille_fraise>div>img {
+   border: 2px solid #9f7a77;
+   
+}
+
+.list_taille_fraise>div>p {
+   color: black;
+   background-color: #d87f7f;
+   padding: 5px;
+
+}
+
+/*                    Fin de la section                            */
