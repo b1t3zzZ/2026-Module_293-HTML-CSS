@@ -142,27 +142,43 @@ p {
 
 .list_taille_fraise {
    display: flex;
-   justify-content: center;
-   gap: 130px;
+   justify-content: space-around;
    padding: 20px;
+   position: relative;
 }
 
 
 .list_taille_fraise>div {
    border: 10px solid #d6c8c7;
    border-radius: 5px;
+   box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
 }
 
-.list_taille_fraise>div>img {
-   border: 2px solid #9f7a77;
-   
+.list_taille_fraise>div>div {
+   border: 1px solid #866966;
+   border-radius: 5px;
+   margin: -1px;
+   display: flex;
+   flex-direction: column;
+
 }
 
-.list_taille_fraise>div>p {
+.list_taille_fraise>div>div>image {}
+
+.list_taille_fraise>div>div>:first-child {
+   color: black;
+   padding: 15px;
+   position: absolute;
+   background-color: rgba(255, 255, 255, 0.699);
+   border-radius: 10px;
+
+}
+
+.list_taille_fraise>div>div>:last-child {
    color: black;
    background-color: #d87f7f;
    padding: 5px;
-
+   font-size: 12px;
 }
 
 /*                    Fin de la section                            */
