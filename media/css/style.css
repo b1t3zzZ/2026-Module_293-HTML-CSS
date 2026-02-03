@@ -1,12 +1,51 @@
+/* principal */
 * {
    margin: 0;
    padding: 0;
 }
 
-header {
-   background-color: #ae3836;
-   padding: 1.5%;
+body {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
+
+main {
+
+   max-width: 1000px;
+}
+
+header {
+   width: 100%;
+   background-color: #ae3836;
+   padding: 1.5% 0 1.5% 0;
+}
+
+footer {
+   background-color: #6a3b3a;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   padding: 1.5% 0 1.5% 0;
+   width: 100%;
+}
+
+footer>p {
+   color: #b4afad;
+}
+
+.listFooter>li>a {
+   text-decoration: none;
+   color: #af8684;
+   padding: 5px;
+}
+
+
+
+/******************************************************/
 
 ul,
 ol {
@@ -20,18 +59,16 @@ ol {
 
 a {
    display: flex;
-   color: white;
-   text-decoration: none;
+
 }
 
 p {
-   color: white;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    font-style: normal;
 }
 
 /*                                Les boutons du haut                         */
-.aheader {
+.aheader>ul>li>a {
    color: white;
    text-decoration: none;
    background-color: #875c5a;
@@ -45,12 +82,12 @@ p {
    font-size: 1em;
 }
 
-.aheader:hover {
+.aheader>ul>li>a:hover {
    color: rgb(250, 74, 74);
 
 }
 
-.aheader:active {
+.aheader>ul>li>a:active {
    background-color: white;
    color: rgb(133, 1, 1);
    box-shadow: 4px -4px 1px;
@@ -61,14 +98,18 @@ p {
 
 /*                   Section "Bienvenue dans l'univers des fraises"*/
 .debut {
+   height: 320px;
+   width: 100%;
+
    display: flex;
    flex-direction: column;
+   justify-content: center;
    align-items: center;
+
    background-image: url("../images/fraise.png");
    background-size: cover;
    background-position: center;
-   height: 320px;
-   justify-content: center;
+
    text-align: center;
    color: white;
    text-shadow: 2px 3px 4px rgb(34, 34, 34);
@@ -93,21 +134,22 @@ p {
 
 .listVarieteFraise {
    margin: 15px;
-
-
 }
 
-.varietesFraise {
+.debut2>h2 {
    color: white;
    text-decoration: none;
    font-family: "Edu NSW ACT Cursive", cursive;
    font-style: italic;
    text-shadow: 2px 3px 4px rgb(34, 34, 34);
    padding: 12px;
-
 }
 
-.textVarietesDeFraise {
+.debut2>p {
+   color: white;
+}
+
+.listVarieteFraise>li {
    display: flex;
    background-color: #6a3b3a;
    text-decoration: none;
@@ -115,6 +157,11 @@ p {
    padding: 15px;
    border-radius: 5px;
    font-size: 20px;
+}
+
+.listVarieteFraise>li>a {
+   color: white;
+   text-decoration: none;
 }
 
 /*                   Fin de la partie                              */
@@ -126,18 +173,13 @@ p {
    border-radius: 10px;
 }
 
-.titreTailleFraise {
+.debut3>h3 {
    display: flex;
    justify-content: center;
    font-family: "Edu NSW ACT Cursive", cursive;
    font-style: italic;
-   text-shadow: 2px 3px 4px rgb(34, 34, 34);
    padding: 17px;
    font-size: 25px;
-}
-
-.textTailleFraise {
-   display: block;
 }
 
 .list_taille_fraise {
@@ -151,7 +193,7 @@ p {
 .list_taille_fraise>div {
    border: 10px solid #d6c8c7;
    border-radius: 5px;
-   box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .list_taille_fraise>div>div {
@@ -160,25 +202,23 @@ p {
    margin: -1px;
    display: flex;
    flex-direction: column;
-
 }
 
-.list_taille_fraise>div>div>image {}
-
-.list_taille_fraise>div>div>:first-child {
+.list_taille_fraise>div>div> :first-child {
    color: black;
-   padding: 15px;
+   padding: 13px;
    position: absolute;
-   background-color: rgba(255, 255, 255, 0.699);
-   border-radius: 10px;
-
+   background-color: rgba(255, 255, 255);
+   border-bottom-right-radius: 12px;
+   font-size: 25px;
+   opacity: 55%;
 }
 
-.list_taille_fraise>div>div>:last-child {
+.list_taille_fraise>div>div> :last-child {
    color: black;
    background-color: #d87f7f;
    padding: 5px;
-   font-size: 12px;
+   font-size: 15px;
+   color: #3e3838;
 }
-
 /*                    Fin de la section                            */
