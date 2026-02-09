@@ -6,6 +6,7 @@
 
 body {
    width: 100%;
+   min-height: 100vh;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -13,8 +14,8 @@ body {
 }
 
 main {
-
    max-width: 1000px;
+   flex: 1;
 }
 
 header {
@@ -117,6 +118,7 @@ p {
    font-optical-sizing: auto;
    font-weight: 700;
    font-style: normal;
+   
 }
 
 /*                   Fin de la section                            */
@@ -221,4 +223,38 @@ p {
    font-size: 15px;
    color: #3e3838;
 }
+
 /*                    Fin de la section                            */
+
+@media screen and (max-width: 880px) {
+   .aheader>ul>li>a {
+      font-size: 80%;
+   }
+
+   main {
+      max-width: 700px;
+   }
+   .debut{
+      font-size: 13px;
+   }
+
+   .list_taille_fraise {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+   }
+
+   .list_taille_fraise>div {
+      width: 65%;
+
+   }
+
+   .list_taille_fraise>div>div>:first-child {
+      width: 37%;
+   }
+   .listVarieteFraise{
+      flex-direction: column;
+      gap: 5px;
+   }
+}
