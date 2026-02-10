@@ -34,59 +34,73 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-contact">
         <fieldset>
             <form>
 
                 <h1>Contactez-Nous</h1>
 
-                <p>Utilisez ce formulaire pour commander vos barquettes de fraises préférées ou simplement pour nous
+                <p class="p-text-informatif">Utilisez ce formulaire pour commander vos barquettes de fraises préférées
+                    ou simplement pour nous
                     envoyer
                     un
                     message &#x1F353
                 </p>
 
-                <p>
-                    <label for="name-id">Nom *</label>
-                    <input type="text" name="name-id" id="name-id" placeholder="Ecrivez votre nom...">
-                </p>
-                <p>
-                    <label for="surname-id">Prénom *</label>
-                    <input type="text" name="surname-id" id="surname-id" placeholder="Ecrivez votre prénom...">
-                </p>
-                <p>
-                    <label for="adresse-id">Adresse*</label>
-                    <input type="text" name="adresse-id" id="adresse-id" placeholder="Ecrivez votre mail...">
-                </p>
-                <p>
-                    <label for="city-id">Lieu*</label>
-                    <input type="text" name="city-id" id="city-id" placeholder="Entrez votre lieu...">
-                </p>
-                <p>
-                    <label for="npa-id">N postale (NPA)</label>
-                    <input type="text" name="npa-id" id="npa-id" placeholder="Entrez votre NPA...">
-                </p>
+                <div>
+                    <p>
+                        <label for="name-id">Nom *</label>
+                        <input type="text" name="name-id" id="name-id" placeholder="Ecrivez votre nom...">
+                    </p>
+                    <p>
+                        <label for="surname-id">Prénom *</label>
+                        <input type="text" name="surname-id" id="surname-id" placeholder="Ecrivez votre prénom...">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="adresse-id">Adresse*</label>
+                        <input type="text" name="adresse-id" id="adresse-id" placeholder="Ecrivez votre mail...">
+                    </p>
+                    <p>
+                        <label for="city-id">Lieu*</label>
+                        <input type="text" name="city-id" id="city-id" placeholder="Entrez votre lieu...">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="npa-id">N postale (NPA)</label>
+                        <input type="text" name="npa-id" id="npa-id" placeholder="Entrez votre NPA...">
+                    </p>
+                </div>
 
-                <fieldset>
+                <fieldset class="fieldset-choisir">
                     <legend>Votre commande</legend>
                     <p>Barquette de fraise désirée : </p>
 
-                    <input type="checkbox" name="gariguette" id="gariguette-id">
-                    <label for="gariguette-id">
-                        La gariguette
-                    </label>
+                    <div>
 
-                    <input type="checkbox" name="mariguette" id="mariguette-id">
-                    <label for="mariguette-id">
-                        La mariquette
-                    </label>
+                        <label for="gariguette-id">
+                            La gariguette
+                        </label>
+                        <input type="checkbox" name="gariguette" id="gariguette-id">
+                    </div>
+                    <div>
 
-                    <input type="checkbox" name="clery" id="clery-id">
-                    <label for="clery-id">
-                        La cléry
-                    </label>
+                        <label for="mariguette-id">
+                            La mariquette
+                        </label>
+                        <input type="checkbox" name="mariguette" id="mariguette-id">
+                    </div>
+                    <div>
 
-                    <p>
+                        <label for="clery-id">
+                            La cléry
+                        </label>
+                        <input type="checkbox" name="clery" id="clery-id">
+                    </div>
+
+                    <p class="p-select">
                         <label for="quantite-id">Quantité *</label>
                         <select name="--Choisissez--">
                             <option value="1">1</option>
@@ -97,20 +111,27 @@
                         </select>
                     </p>
 
-                    <fieldset>
+                    <fieldset class="mode-de-payement">
                         <legend>Mode de paiement</legend>
-                        <input type="radio" name="payment" id="paiementalalivraison-id"><label
-                            for="paiementalalivraison-id">Payement à la livraison</label>
-                        <input type="radio" name="payment" id="carte-id"><label for="carte-id">Carte bancaire</label>
-                        <input type="radio" name="payment" id="paypal-id"><label for="paypal-id">PayPal</label>
+                        <div>
+                            <input type="radio" name="payment" id="paiementalalivraison-id"><label
+                                for="paiementalalivraison-id">Payement à la livraison</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="payment" id="carte-id"><label for="carte-id">Carte
+                                bancaire</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="payment" id="paypal-id"><label for="paypal-id">PayPal</label>
+                        </div>
                     </fieldset>
                 </fieldset>
                 <label for="message-id"><br>Message</label>
                 <textarea name="message" id="message-id"></textarea>
 
-                <p>
+                <p class="p-accord">
                     <input type="checkbox" name="accept" id="accept-id">
-                    <label for="accept-id">J'accepte les conditions générales *</label>
+                    <label class="button-accord" for="accept-id">J'accepte les conditions générales *</label>
                 </p>
 
                 <input type="submit" name="buttonfinish" id="envoyer-id">

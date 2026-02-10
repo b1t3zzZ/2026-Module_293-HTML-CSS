@@ -11,6 +11,8 @@ body {
    flex-direction: column;
    align-items: center;
    justify-content: center;
+
+
 }
 
 main {
@@ -118,7 +120,7 @@ p {
    font-optical-sizing: auto;
    font-weight: 700;
    font-style: normal;
-   
+
 }
 
 /*                   Fin de la section                            */
@@ -226,6 +228,103 @@ p {
 
 /*                    Fin de la section                            */
 
+/*                    Contact                                      */
+.main-contact {
+   margin: 15px;
+   width: 500px;
+}
+
+fieldset {
+   padding: 10px;
+
+   border: 3px outset #9b2c2c;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+
+   background-color: #f9e4e4;
+}
+
+
+
+form {}
+
+form>h1 {
+   display: flex;
+   justify-content: center;
+   padding: 15px;
+}
+
+.p-text-informatif {
+   text-align: center;
+}
+
+form>div {
+   display: flex;
+   justify-content: space-around;
+}
+
+form>div>p {
+   padding: 15px;
+
+}
+
+form>div>p>input {
+   padding: 5px;
+   display: block;
+   border: 2px inset red;
+   border-radius: 7px;
+
+}
+form>div>p>input:focus {
+   border: 2px outset #420c0c;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   outline:none ;
+}
+
+.fieldset-choisir>p {
+   padding: 5px 0 5px 0;
+}
+
+.fieldset-choisir>div {
+   display: grid;
+   grid-template-columns: auto 18px;
+   max-width: 140px;
+
+   margin-left: 25px;
+   padding: 2px 0 2px 0;
+
+
+}
+
+.p-select {
+   display: grid;
+   grid-template-columns: auto 30px;
+   max-width: 120px;
+
+}
+
+select {
+   font-size: 15px;
+   text-align: center;
+   appearance: none;
+   border-radius: 10px;
+}
+
+.fieldset-choisir>div>input {}
+
+.mode-de-payement {
+   margin: 20px 0 0 0;
+   display: flex;
+   justify-content: space-around;
+   padding: 7px 0 12px 0;
+}
+.p-accord{
+   padding: 5px 0 5px 0;
+}
+
+/*                    Fin de contact                               */
+
 @media screen and (max-width: 880px) {
    .aheader>ul>li>a {
       font-size: 80%;
@@ -234,7 +333,8 @@ p {
    main {
       max-width: 700px;
    }
-   .debut{
+
+   .debut {
       font-size: 13px;
    }
 
@@ -253,7 +353,8 @@ p {
    .list_taille_fraise>div>div>:first-child {
       width: 37%;
    }
-   .listVarieteFraise{
+
+   .listVarieteFraise {
       flex-direction: column;
       gap: 5px;
    }
