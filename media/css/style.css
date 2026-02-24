@@ -226,6 +226,7 @@ p {
    color: #3e3838;
 }
 
+
 /*                    Fin de la section                            */
 
 /*                    Contact                                      */
@@ -243,10 +244,6 @@ fieldset {
 
    background-color: #f9e4e4;
 }
-
-
-
-form {}
 
 form>h1 {
    display: flex;
@@ -275,11 +272,12 @@ form>div>p>input {
    border-radius: 7px;
 
 }
+
 form>div>p>input:focus {
    border: 2px outset #420c0c;
    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
    border-radius: 8px;
-   outline:none ;
+   outline: none;
 }
 
 .fieldset-choisir>p {
@@ -319,7 +317,14 @@ select {
    justify-content: space-around;
    padding: 7px 0 12px 0;
 }
-.p-accord{
+
+.mode-de-payement>div {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.p-accord {
    padding: 5px 0 5px 0;
 }
 
@@ -358,4 +363,59 @@ select {
       flex-direction: column;
       gap: 5px;
    }
+}
+
+@media screen and (max-width:448px) {
+
+   .aheader>ul>li>a {
+      font-size: 45%;
+      padding: 5px;
+      margin: 2px;
+   }
+
+   footer>p,
+   .listFooter>li>a {
+      font-size: 45%;
+   }
+
+   body {
+      font-size: 66%;
+   }
+
+   main {
+      width: 95%;
+   }
+
+   p {
+      font-size: 85%;
+   }
+
+   .list_taille_fraise>div>div> :first-child {
+      font-size: 15px;
+   }
+
+   .body-contact {
+      font-size: 70%;
+   }
+
+   .main-contact {
+      padding-top: 15px;
+      max-width: 80%;
+      margin: 0;
+   }
+
+   fieldset>form>div {
+      display: flex;
+      flex-direction: column;
+   }
+
+   fieldset>form>div>p>input {
+      padding: 0;
+   }
+
+   .mode-de-payement>div {
+      display: flex;
+      flex-direction: column;
+   }
+
 }

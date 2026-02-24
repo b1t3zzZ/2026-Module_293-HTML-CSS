@@ -14,7 +14,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="body-contact">
     <header>
         <nav class="aheader">
             <ul>
@@ -114,15 +114,17 @@
                     <fieldset class="mode-de-payement">
                         <legend>Mode de paiement</legend>
                         <div>
-                            <input type="radio" name="payment" id="paiementalalivraison-id"><label
-                                for="paiementalalivraison-id">Payement à la livraison</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="payment" id="carte-id"><label for="carte-id">Carte
-                                bancaire</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="payment" id="paypal-id"><label for="paypal-id">PayPal</label>
+                            <div>
+                                <input type="radio" name="payment" id="paiementalalivraison-id"><label
+                                    for="paiementalalivraison-id">Payement à la livraison</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="payment" id="carte-id"><label for="carte-id">Carte
+                                    bancaire</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="payment" id="paypal-id"><label for="paypal-id">PayPal</label>
+                            </div>
                         </div>
                     </fieldset>
                 </fieldset>
@@ -133,7 +135,7 @@
                     <input type="checkbox" name="accept" id="accept-id">
                     <label class="button-accord" for="accept-id">J'accepte les conditions générales *</label>
                 </p>
-
+                
                 <input type="submit" name="buttonfinish" id="envoyer-id">
             </form>
         </fieldset>
