@@ -34,9 +34,9 @@
         </nav>
     </header>
 
-    <main class="main-contact">
+    <main class="maincontact">
         <fieldset>
-            <form>
+            <form id="form">
 
                 <h1>Contactez-Nous</h1>
 
@@ -49,27 +49,29 @@
 
                 <div>
                     <p>
-                        <label for="name-id">Nom *</label>
-                        <input type="text" name="name-id" id="name-id" placeholder="Ecrivez votre nom...">
+                        <label for="name">Nom *</label>
+                        <input required type="text" name="name" id="name" placeholder="Ecrivez votre nom...">
                     </p>
                     <p>
-                        <label for="surname-id">Prénom *</label>
-                        <input type="text" name="surname-id" id="surname-id" placeholder="Ecrivez votre prénom...">
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        <label for="adresse-id">Adresse*</label>
-                        <input type="text" name="adresse-id" id="adresse-id" placeholder="Ecrivez votre mail...">
-                    </p>
-                    <p>
-                        <label for="city-id">Lieu*</label>
-                        <input type="text" name="city-id" id="city-id" placeholder="Entrez votre lieu...">
+                        <label for="surname">Prénom *</label>
+                        <input required type="text" name="surname" id="surname"
+                            placeholder="Ecrivez votre prénom...">
                     </p>
                 </div>
                 <div>
                     <p>
-                        <label for="npa-id">N postale (NPA)</label>
+                        <label for="adresse">Adresse*</label>
+                        <input required type="text" name="adresse-id" id="adresse"
+                            placeholder="Ecrivez votre mail...">
+                    </p>
+                    <p>
+                        <label for="city">Lieu*</label>
+                        <input required type="text" name="city-id" id="city" placeholder="Entrez votre lieu...">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="npa">N postale (NPA)</label>
                         <input type="text" name="npa-id" id="npa-id" placeholder="Entrez votre NPA...">
                     </p>
                 </div>
@@ -80,29 +82,29 @@
 
                     <div>
 
-                        <label for="gariguette-id">
+                        <label for="gariguette">
                             La gariguette
                         </label>
                         <input type="checkbox" name="gariguette" id="gariguette-id">
                     </div>
                     <div>
 
-                        <label for="mariguette-id">
+                        <label for="mariguette">
                             La mariquette
                         </label>
                         <input type="checkbox" name="mariguette" id="mariguette-id">
                     </div>
                     <div>
 
-                        <label for="clery-id">
+                        <label for="clery">
                             La cléry
                         </label>
-                        <input type="checkbox" name="clery" id="clery-id">
+                        <input type="checkbox" name="clery" id="clery">
                     </div>
 
                     <p class="p-select">
                         <label for="quantite-id">Quantité *</label>
-                        <select name="--Choisissez--">
+                        <select required name="--Choisissez--">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -129,16 +131,21 @@
                     </fieldset>
                 </fieldset>
                 <label for="message-id"><br>Message</label>
-                <textarea name="message" id="message-id"></textarea>
-
-                <p class="p-accord">
-                    <input type="checkbox" name="accept" id="accept-id">
-                    <label class="button-accord" for="accept-id">J'accepte les conditions générales *</label>
-                </p>
+                <textarea name="message" id="message"></textarea>
                 
-                <input type="submit" name="buttonfinish" id="envoyer-id">
+                <p class="p-accord">
+                    <input required type="checkbox" name="accept" id="accept">
+                    <label class="button-accord" for="accept">J'accepte les conditions générales *</label>
+                </p>
+
+                <input type="submit" name="buttonfinish" id="envoyer">
             </form>
         </fieldset>
+
+        <section id="resultat" class="seccont1">
+
+        </section>
+
     </main>
 
     <footer>
@@ -154,7 +161,7 @@
             © 2021 - Tous droits réservés
         </p>
     </footer>
-
+    <script src="./media/js/script.js"></script>
 </body>
 
 </html>

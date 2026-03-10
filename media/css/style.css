@@ -230,12 +230,20 @@ p {
 /*                    Fin de la section                            */
 
 /*                    Contact                                      */
-.main-contact {
+.maincontact {
    margin: 15px;
-   width: 500px;
+   max-width: 500px;
 }
-
 fieldset {
+   padding: 10px;
+
+   border: 3px outset #9b2c2c;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+
+   background-color: #f9e4e4;
+}
+.menu-commande {
    padding: 10px;
 
    border: 3px outset #9b2c2c;
@@ -309,7 +317,6 @@ select {
    border-radius: 10px;
 }
 
-.fieldset-choisir>div>input {}
 
 .mode-de-payement {
    margin: 20px 0 0 0;
@@ -328,6 +335,10 @@ select {
    padding: 5px 0 5px 0;
 }
 
+.sec-cont-1{
+   display: flex;
+   justify-content: center;
+}
 /*                    Fin de contact                               */
 
 @media screen and (max-width: 880px) {
